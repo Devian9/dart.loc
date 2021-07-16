@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src='scripts/scripts.js'></script>
+	<title>Dart Service Manager</title>
+</head>
+<body>
+	<header>
+		<div class='container'>
+			<div id="headerInside">
+				<div id="headerLogo">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<nav>
+					<a class='active' href="http://dart.loc/">Home</a>
+					<a href="http://dart.loc/#">Service</a>
+					<a href="http://dart.loc/##">Extension</a>
+					<a href="http://dart.loc/###">Pricing</a>
+					<a href="http://dart.loc/####">Help</a>
+				</nav>
+				<div id="signup">
+					<button>
+						sign up
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="promo">
+		<div id="promoInside" class='container'>
+			<div class='promoContent' id='promoText'>
+				<h1>
+					lorem Ipsum
+					Dolor sit amet
+				</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc
+				</p>
+				<button class='button' id='buttonBuy'>buy now</button>
+				<button class='button' id='buttonTry'>try for free</button>
+			</div>
+			<div class='promoContent' id='promoVideo'>
+				<video id='promo_video' width="600" height="auto" loop="loop" controls="controls"  preload="true" style="pointer-events: none;">
+			     <source src="video/Cinematic.mp4" type="video/mp4"/>
+			     Your browser does not support the video tag.
+			   </video>
+			   <div id="promoPreview">
+			   	
+			   </div>
+			   <button class='promoButton'id="promoPlay" onclick='promoPlay()'>
+			   		<img src="images/play.png" alt="play">
+			   </button>
+			   <button class='promoButton' id="promoPause" onclick='promoPause()'>
+			   		<img src="images/pause.png" alt="play">
+			   </button>
+			</div>
+		</div>
+	</div>
+	<div id="tools">
+		<div class="container">
+			<div id="toolsInside">
+				<div id="toolsDesc" class='toolsContent'>
+					<div class='toolsContentIn'>
+						<h1>Easy & Useful</h1>
+						<h2>Project Management Tool</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+					</div>
+				</div>
+				<div id="toolsArt" class='toolsContent'>
+					<div class='toolsContentIn'>
+						<img src="images/tools1.png" alt="">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class='toolsContentIn'>
+						<img src="images/tools2.png" alt="">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class='toolsContentIn'>
+						<img src="images/tools3.png" alt="">
+						<h3>Title Goes Here</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+				<div id='toolsButton' class='toolsContent'>
+					<button>get started</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="stats">
+		<div class="container">
+			<div id="statsInside">
+				<div class='statsContent' style=' background-color: #80d8ff'>
+					<img src="images/statsBusiness.png" alt="">
+					<h3>12000+</br>
+					Business</h3>
+				</div>
+				<div class='statsContent' style=' background-color: #82b1ff'>
+					<img src="images/statsDownloads.png" alt="">
+					<h3>60000+</br>
+					Downloads</h3>
+				</div>
+				<div class='statsContent' style=' background-color: #b388ff'>
+					<img src="images/statsFreeInstall.png" alt="">
+					<h3>30000+</br>
+					Free Installs</h3>
+				</div>
+				<div class='statsContent' style=' background-color: #ea80fc'>
+					<img src="images/statsProUsers.png" alt="">
+					<h3>40000+</br>
+					Pro Users</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="services">
+		<div class="container">
+			<div id="servicesInside">
+				<div id='servicesDesc'>
+					<h1>Services</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+				</div>
+				<div id='servicesContent'>
+					<div class="servicesContent active">
+						<button class='servicesButton' onclick="Statistics()">
+							<a><img src="images/statistics.png" alt="">statistics</a>
+							<img src="images/arrow_drop_down.png" alt="">
+						</button>
+						<div id='onclickStat'>
+						    <img src="images/onclickImage.png" alt="">
+						    <p>
+						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+						    </p>
+						</div>
+					</div>
+					<div class="servicesContent">
+						<button class='servicesButton' onclick="Inbox()">
+							<a><img src="images/inbox.png" alt="">Inbox</a>
+							<img src="images/arrow_drop_down.png" alt="">
+						</button>
+						<div id='onclickInbox'>
+						    <img src="images/onclickImage.png" alt="">
+						    <p>
+						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+						    </p>
+						</div>
+					</div>
+					<div class="servicesContent">
+						<button class='servicesButton' onclick="Team()">
+							<a><img src="images/team.png" alt="">Team</a>
+							<img src="images/arrow_drop_down.png" alt="">
+						</button>
+						<div id='onclickTeam'>
+						    <img src="images/onclickImage.png" alt="">
+						    <p>
+						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+						    </p>
+						</div>
+					</div>
+					<div class="servicesContent">
+						<button class='servicesButton' onclick="Settings()">
+							<a><img src="images/settings.png" alt="">Settings</a>
+							<img src="images/arrow_drop_down.png" alt="">
+						</button>
+						<div id='onclickSet'>
+						    <img src="images/onclickImage.png" alt="">
+						    <p>
+						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+						    </p>
+						</div>
+					</div>
+					<div class="servicesContent">
+						<button class='servicesButton' onclick="Feed()">
+							<a><img src="images/feed.png" alt="">Feed</a>
+							<img src="images/arrow_drop_down.png" alt="">
+						</button>
+						<div id='onclickFeed'>
+						    <img src="images/onclickImage.png" alt="">
+						    <p>
+						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+						    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+						    </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="feedback">
+		<div class="container">
+			<div id="feedbackInside">
+				<div class='feedbackContent' id='feedbackDesc'>
+					<h1>What our customers
+					have to say about us.</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<button id='feedbackButton'>get started</button>
+				</div>
+				<div class='feedbackContent'>
+					<button class='keyboard'>
+						<img src="images/keyboard_arrow_up.png" alt="">
+					</button>
+					<div class='feedbackText'>
+						<img src="images/feedback1.png" alt="">
+						<span>
+							<h3>John Doe</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+						</span>
+					</div>
+					<div class='feedbackText'>
+						<img src="images/feedback2.png" alt="">
+						<span>
+							<h3>Khalessi</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+						</span>
+					</div>
+					<button class='keyboard'>
+						<img src="images/keyboard_arrow_down.png" alt="">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="team">
+		<div class="container">
+			<div id="teamInside">
+				<div class='teamContent teamText'>
+					<h1>Our Team</h1>
+					<p style='color: #b0bec5;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+				</div>
+				<div class='teamContent' id='teamContent'>
+					<span>
+						<img src="images/team1.png" alt="">
+					</span>
+					<span>
+						<img src="images/team2.png" alt="">
+					</span>
+					<span>
+						<img src="images/team3.png" alt="">
+					</span>
+				</div>
+				<div class='teamContent teamText'>
+					<h3>Sophie Turner</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<span id='teamIcons'>
+						<img src="images/team_icon1.png" alt="">
+						<img src="images/team_icon2.png" alt="">
+						<img src="images/team_icon3.png" alt="">
+						<img src="images/team_icon4.png" alt="">
+						<img src="images/team_icon5.png" alt="">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact">
+		<div class="container">
+			<div id="contantInside">
+				<form action="">
+					<div id='contactText'>
+						<h1>Contact Us</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					</div>
+					<div class='contactField'>
+					<input class='inputContacts' type="text" value='First Name'>
+					<input class='inputContacts' type="text" value='Last Name'>
+					</div>
+					<div class='contactField'>
+					<input class='inputContacts' type="text" value='Email'>
+					<input class='inputContacts' type="text" value='Phone'>
+					</div>
+					<input id='inputMessage' type="text" value='Message'>
+					<div  class='submitField'>
+					<span>
+					<input id='checkbox' type="checkbox">
+					<p>subscribe to the newsletter</p>
+					</span>
+					<input id='buttonSubmit' type="submit" value='Send'>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+</body>
+</html>
