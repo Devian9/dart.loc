@@ -24,13 +24,31 @@
 					<a href="http://dart.loc/####">Help</a>
 				</nav>
 				<div id="signup">
-					<button>
+					<button type="button" onclick="signupOpen()">
 						sign up
 					</button>
 				</div>
 			</div>
 		</div>
 	</header>
+	<div id="signupForm">
+		<div id="signupformInside">
+			<img src="https://img.icons8.com/color-glass/96/000000/user-location.png"/>
+			<h1>Sign Up Now</h1>
+			<form action="">
+				<input type="email" placeholder="Your Email" class="signupInput">
+				<input type="password" placeholder="Your password" class="signupInput">
+				<p><span><input type="checkbox"></span> I agree to the terms of services</p>
+				<button type='button' id="buttonSignUp" onclick="signupClose()">Sign Up</button>
+				<hr>
+				<p id="or">OR</p>
+				<button type="button" class="signupSocial" onclick="signupClose()">Login with twitter</button>
+				<button type="button" class="signupSocial" onclick="signupClose()">Login with facebook</button>
+				<button type="button" class="signupSocial" onclick="signupClose()">Login with google</button>
+				<p>Do you have an account ? <a href="#">Sign in</a></p>
+			</form>
+		</div>
+	</div>	
 	<div id="promo">
 		<div id="promoInside" class='container'>
 			<div class='promoContent' id='promoText'>
@@ -49,10 +67,10 @@
 			     <source src="video/Cinematic.mp4" type="video/mp4"/>
 			     Your browser does not support the video tag.
 			   </video>
-			   <div id="promoPreview">
+			   <div id="promoPreview" style="display: inline">
 			   	
 			   </div>
-			   <button class='promoButton'id="promoPlay" onclick='promoPlay()'>
+			   <button class='promoButton' id="promoPlay" style="display: inline" onclick='promoPlay()'>
 			   		<img src="images/play.png" alt="play">
 			   </button>
 			   <button class='promoButton' id="promoPause" onclick='promoPause()'>
@@ -133,7 +151,7 @@
 							<a><img src="images/statistics.png" alt="">statistics</a>
 							<img src="images/arrow_drop_down.png" alt="">
 						</button>
-						<div id='onclickStat'>
+						<div id='onclickStat' style='display: none'>
 						    <img src="images/onclickImage.png" alt="">
 						    <p>
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -147,7 +165,7 @@
 							<a><img src="images/inbox.png" alt="">Inbox</a>
 							<img src="images/arrow_drop_down.png" alt="">
 						</button>
-						<div id='onclickInbox'>
+						<div id='onclickInbox' style='display: none'>
 						    <img src="images/onclickImage.png" alt="">
 						    <p>
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -161,7 +179,7 @@
 							<a><img src="images/team.png" alt="">Team</a>
 							<img src="images/arrow_drop_down.png" alt="">
 						</button>
-						<div id='onclickTeam'>
+						<div id='onclickTeam' style='display: none'>
 						    <img src="images/onclickImage.png" alt="">
 						    <p>
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -175,7 +193,7 @@
 							<a><img src="images/settings.png" alt="">Settings</a>
 							<img src="images/arrow_drop_down.png" alt="">
 						</button>
-						<div id='onclickSet'>
+						<div id='onclickSet' style='display: none'>
 						    <img src="images/onclickImage.png" alt="">
 						    <p>
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -189,7 +207,7 @@
 							<a><img src="images/feed.png" alt="">Feed</a>
 							<img src="images/arrow_drop_down.png" alt="">
 						</button>
-						<div id='onclickFeed'>
+						<div id='onclickFeed' style='display: none'>
 						    <img src="images/onclickImage.png" alt="">
 						    <p>
 						    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -271,31 +289,58 @@
 	<div id="contact">
 		<div class="container">
 			<div id="contantInside">
-				<form action="">
+				<form id='contactForm' action="">
 					<div id='contactText'>
 						<h1>Contact Us</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					</div>
 					<div class='contactField'>
-					<input class='inputContacts' type="text" value='First Name'>
-					<input class='inputContacts' type="text" value='Last Name'>
+					<input class='inputContacts' type="text" placeholder='First Name'>
+					<input class='inputContacts' type="text" placeholder='Last Name'>
 					</div>
 					<div class='contactField'>
-					<input class='inputContacts' type="text" value='Email'>
-					<input class='inputContacts' type="text" value='Phone'>
+					<input class='inputContacts' type="text" placeholder='Email'>
+					<input class='inputContacts' type="text" placeholder='Phone'>
 					</div>
-					<input id='inputMessage' type="text" value='Message'>
+					<input id='inputMessage' type="text" placeholder='Message'>
 					<div  class='submitField'>
 					<span>
 					<input id='checkbox' type="checkbox">
 					<p>subscribe to the newsletter</p>
 					</span>
-					<input id='buttonSubmit' type="submit" value='Send'>
+					<input id='buttonSubmit' type="submit" placeholder='Send'>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<footer></footer>
+	<footer class="footer">
+		<div class="container">
+			<div class="footerInside">
+				<div id="footerLogo">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<div id="footerNav">
+					<a class='active' href="http://dart.loc/">Home</a>
+					<a href="http://dart.loc/#">Service</a>
+					<a href="http://dart.loc/##">Extension</a>
+					<a href="http://dart.loc/###">Pricing</a>
+					<a href="http://dart.loc/####">Help</a>
+				</div>
+			</div>
+			<div class="footerInside">
+				<div id="footerPolicy">
+					<a href="">Privacy Policy</a>
+				</div>
+				<div id="footerSocial">
+					<img src="images/team_icon1.png" alt="">
+					<img src="images/team_icon2.png" alt="">
+					<img src="images/team_icon3.png" alt="">
+					<img src="images/team_icon4.png" alt="">
+					<img src="images/team_icon5.png" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

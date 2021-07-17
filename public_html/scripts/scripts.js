@@ -38,10 +38,19 @@ function promoPause() {
 			}); 
 }
 
+//signupForm
+function signupOpen() {
+  document.getElementById("signupForm").style.display = "block";
+}
+
+function signupClose() {
+  document.getElementById("signupForm").style.display = "none";
+}
+
 //servicesContent
 function Statistics() {
   var x = document.getElementById("onclickStat");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "flex";
   } else {
     x.style.display = "none";
@@ -49,7 +58,7 @@ function Statistics() {
 }
 function Inbox() {
   var x = document.getElementById("onclickInbox");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "flex";
   } else {
     x.style.display = "none";
@@ -57,7 +66,7 @@ function Inbox() {
 }
 function Team() {
   var x = document.getElementById("onclickTeam");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "flex";
   } else {
     x.style.display = "none";
@@ -65,7 +74,7 @@ function Team() {
 }
 function Settings() {
   var x = document.getElementById("onclickSet");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "flex";
   } else {
     x.style.display = "none";
@@ -73,7 +82,7 @@ function Settings() {
 }
 function Feed() {
   var x = document.getElementById("onclickFeed");
-  if (x.style.display === "none") {
+  if (x.style.display === "none" || x.style.display === "") {
     x.style.display = "flex";
   } else {
     x.style.display = "none";

@@ -78,8 +78,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 }
-#headerLogo {
-}
 nav {
 	max-width: 493px;
 	
@@ -103,8 +101,6 @@ nav a:hover {
 nav .active {
 	color: #061e37;
 }
-#signup {
-}
 #signup button {
 	width: 80px;
 	height: 30px;
@@ -127,6 +123,81 @@ nav .active {
 	border: 1px solid #061e37;
 }
 
+/*--------- SIGN UP FORM */
+#signupForm {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	display: none;
+	z-index: 1001;
+}
+#signupformInside {
+	width: 300px;
+	border: 1px solid #061e37;
+	border-radius: 5px;
+	background: url(../images/contactBackground.png) no-repeat center;
+    background-size: cover;
+	padding: 50px;
+	margin: 8% auto 0 39%;
+	text-align: center;
+	z-index: 1001;
+}
+.signupInput {
+	width: 260px;
+	height: 50px;
+	padding: 0 0 0 20px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #061e37;
+	background: #fff;
+
+	color: #061e37;
+	font-family: Raleway SB;
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 30px;
+}
+#buttonSignUp {
+	width: 130px;
+	height: 50px;
+	margin: 10px 0;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	border: none;
+	border-radius: 5px;
+	background-color: #1de9b6;
+
+	color: #ffffff;
+	font-family: Raleway R;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+
+	transition: background-color 0.2s linear;
+}
+#buttonSignUp:hover {
+	cursor: pointer;
+	background-color: #061e37;
+}
+#or {
+	background: #fff;
+	width: 30px;
+	margin: -19px auto 10px;
+}
+.signupSocial {
+	background-color: #061e37;
+	margin: 5px 0;
+}
+.signupSocial:hover {
+	background-color: #fff;
+	color: #061e37;
+}
 
 
 /*--------- PROMO */
@@ -589,10 +660,6 @@ video::-webkit-media-controls {
 	line-height: 25px;
 	text-align: left;
 }
-.feedbackKey {
-	text-align: center;
-	height: 
-}
 .keyboard {
 	width: auto;
 	height: auto;
@@ -690,7 +757,7 @@ video::-webkit-media-controls {
 	flex-direction: column;
 	justify-content: center;
 }
-form {
+#contactForm {
 	width: 600px;
 }
 #contactText {
@@ -810,4 +877,56 @@ form {
 	font-style: normal;
 	letter-spacing: normal;
 	line-height: normal;
+}
+
+/*----------- FOOTER */
+
+footer {
+	width: 100%;
+	height: 300px;
+	background: url(../images/footerBackground.png) no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.footerInside {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	height: 65px;
+	align-items: center;
+}
+#footerNav {
+	max-width: 493px;
+	display: flex;
+}
+#footerNav a {
+	margin: 0 0 0 49px;
+	height: 30px;
+	color: #ffffff;
+	font-family: "Raleway SB";
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 25px;
+	text-align: right;
+
+	transition: color .2s linear;
+}
+#footerNav a:hover {
+	color: rgba(255, 255, 255, 0.502);
+}
+#footerPolicy a {
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1.667;
+  text-align: left;
+  position: absolute;
+
+  transition: color .2s linear;
+}
+#footerPolicy a:hover {
+	color: #ffffff;
+}
+#footerSocial img {
+	margin: 26px 12px 0 12px;
 }
