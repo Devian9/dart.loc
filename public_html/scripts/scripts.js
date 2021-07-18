@@ -102,3 +102,5 @@ $(function(){
     nextArrow: '<img src="../images/keyboard_arrow_down.png">',
   });
 });
+
+//teamphotoSlider

@@ -26,6 +26,7 @@ body {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -186,7 +187,7 @@ nav .active {
 	background-color: #061e37;
 }
 #or {
-	background: #fff;
+	background: url(../images/contactBackground.png) no-repeat center;
 	width: 30px;
 	margin: -19px auto 10px;
 }
@@ -750,8 +751,8 @@ video::-webkit-media-controls {
 	border: 1px solid #000;
 	border-radius: 10%;
 	background: url(../images/teamphotoBackground.png) no-repeat center;
-	width: 100px;
-	height: 100px;
+	width: 103px;
+	height: 103px;
 	opacity: 0.4;
 	display: flex;
 	justify-content: center;
@@ -762,8 +763,8 @@ video::-webkit-media-controls {
 	height: 100px;
 }
 .teamphotoActive {
-	width: 140px;
-	height: 140px;
+	width: 143px;
+	height: 143px;
 	opacity: 1;
 }
 .teamphotoActive img {
@@ -780,6 +781,9 @@ video::-webkit-media-controls {
 }
 #teamIcons img {
 	margin: 26px 12px 0 12px;
+}
+#teamIcons img:hover {
+	cursor: pointer;
 }
 
 /*----------- CONTACT */
@@ -968,4 +972,7 @@ footer {
 }
 #footerSocial img {
 	margin: 26px 12px 0 12px;
+}
+#footerSocial img:hover {
+	cursor: pointer;
 }
