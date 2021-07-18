@@ -1,6 +1,6 @@
 // navigation
 $(document).ready(function () {
-    var url = window.location;
+    var url = window.location.href;
     $('nav').find('.active').removeClass('active');
     $('nav a').each(function () {
         if (this.href == url) {
@@ -10,8 +10,7 @@ $(document).ready(function () {
 });
 
 //promoVideo
-function promoPlay() {  
-            $('#promoPlay').click(function() {
+function promoPlay() { 
 	    		$('#promoPlay').css({
 	        		'display' : 'none',
 	    		});
@@ -23,10 +22,8 @@ function promoPlay() {
 	        		'opacity' : '1',
 	    		});
 	    		$('#promo_video').trigger('play');
-			});
 } 
 function promoPause() { 
-            $('#promoPause').click(function() {
 			    $('#promoPlay').css({
 	        		'display' : 'inline',
 			    });
@@ -35,16 +32,21 @@ function promoPause() {
 	        		'opacity' : '0.4',
 	    		});
 	    		$('#promo_video').trigger('pause');
-			}); 
 }
 
 //signupForm
 function signupOpen() {
-  document.getElementById("signupForm").style.display = "block";
+  $('#signupForm').css({
+    'display' : 'block',
+  })
+  // document.getElementById("signupForm").style.display = "block";
 }
 
 function signupClose() {
-  document.getElementById("signupForm").style.display = "none";
+  $('#signupForm').css({
+    'display' : 'none',
+  })
+  // document.getElementById("signupForm").style.display = "none";
 }
 
 //servicesContent
@@ -88,3 +90,15 @@ function Feed() {
     x.style.display = "none";
   }
 }
+
+//feedbackSlider
+$(function(){
+  $('.feedbackSlider').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 2,
+    autoplay: true,
+    prevArrow: '<img src="../images/keyboard_arrow_up.png">',
+    nextArrow: '<img src="../images/keyboard_arrow_down.png">',
+  });
+});

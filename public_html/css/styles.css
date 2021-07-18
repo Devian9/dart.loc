@@ -564,7 +564,7 @@ video::-webkit-media-controls {
 	background-size: cover;
 
 	display: flex;
-  	justify-content: center;
+  justify-content: center;
 }
 #feedbackInside {
 	width: 100%;
@@ -618,7 +618,8 @@ video::-webkit-media-controls {
 .feedbackText {
 	padding-left: 25px;
 	margin: 35px 0;
-
+	height: auto;
+	width: auto !important;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -660,14 +661,33 @@ video::-webkit-media-controls {
 	line-height: 25px;
 	text-align: left;
 }
-.keyboard {
-	width: auto;
-	height: auto;
 
-	border: none;
-	box-shadow: none;
-	border-radius: none;
-	background-color: rgba(0, 0, 0, 0);
+.slick-prev, 
+.slick-next {
+    -webkit-transform: translate(-50%, 0) rotate(90deg);
+    -ms-transform: translate(-50%, 0) rotate(90deg);
+    transform: translate(-50%, 0) rotate(90deg);
+    left: 50%;
+}
+    
+.slick-prev {
+    top: -10px;
+}
+
+.slick-next {
+    top: auto;
+    bottom: -20px;
+}
+
+.feedbackSlider .slick-arrow {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+    
+.feedbackSlider .slick-arrow:hover { 
+    opacity: .6; 
 }
 
 
@@ -681,16 +701,10 @@ video::-webkit-media-controls {
 	text-align: center;
 }
 .teamContent {
-	height: 29%;
 	width: auto;
-	margin: 0 auto;
+	margin: 10px auto;
 }
-.teamText {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.teamText h1 {
+.teamContent h1 {
 	margin-bottom: 29px;
 	height: 34px;
 	color: #061e37;
@@ -702,7 +716,7 @@ video::-webkit-media-controls {
 	line-height: normal;
 	text-align: center;
 }
-.teamText h3 {
+.teamContent h3 {
 	margin-bottom: 20px;
 	height: 18px;
 	color: #061e37;
@@ -714,7 +728,7 @@ video::-webkit-media-controls {
 	line-height: normal;
 	text-align: center;
 }
-.teamText p {
+.teamContent p {
 	width: 645px;
 	height: 64px;
 	color: #90a4ae;
@@ -732,12 +746,37 @@ video::-webkit-media-controls {
 	display: flex;
 	justify-content: space-between;
 }
-#teamContent span {
-	height: 220px;
-
+.teamphoto {
+	border: 1px solid #000;
+	border-radius: 10%;
+	background: url(../images/teamphotoBackground.png) no-repeat center;
+	width: 100px;
+	height: 100px;
+	opacity: 0.4;
 	display: flex;
+	justify-content: center;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+.teamphoto img{
+	width: 100px;
+	height: 100px;
+}
+.teamphotoActive {
+	width: 140px;
+	height: 140px;
+	opacity: 1;
+}
+.teamphotoActive img {
+	width: 140px;
+	height: 140px;
+}
+.teamtextActive {
+	display: flex !important;
 	flex-direction: column;
 	justify-content: center;
+}
+.teamText {
+	display: none;
 }
 #teamIcons img {
 	margin: 26px 12px 0 12px;

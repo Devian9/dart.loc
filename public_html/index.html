@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/media.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src='scripts/scripts.js'></script>
+	<link rel="stylesheet" href="scripts/slick/slick.css">
+	<link rel="stylesheet" href="scripts/slick/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="scripts/slick/slick.min.js"></script>
+	<script src='scripts/scripts.js'></script>
 	<title>Dart Service Manager</title>
 </head>
 <body>
@@ -18,7 +21,7 @@
 				</div>
 				<nav>
 					<a class='active' href="http://dart.loc/">Home</a>
-					<a href="http://dart.loc/#">Service</a>
+					<a href="http://dart.loc/index.html">Service</a>
 					<a href="http://dart.loc/##">Extension</a>
 					<a href="http://dart.loc/###">Pricing</a>
 					<a href="http://dart.loc/####">Help</a>
@@ -230,26 +233,36 @@
 					<button id='feedbackButton'>get started</button>
 				</div>
 				<div class='feedbackContent'>
-					<button class='keyboard'>
-						<img src="images/keyboard_arrow_up.png" alt="">
-					</button>
-					<div class='feedbackText'>
-						<img src="images/feedback1.png" alt="">
-						<span>
-							<h3>John Doe</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-						</span>
+					<div class="slider feedbackSlider">
+						<div class='feedbackText'>
+							<img src="images/feedback1.png" alt="">
+							<span>
+								<h3>John Doe</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</span>
+						</div>
+						<div class='feedbackText'>
+							<img src="images/feedback2.png" alt="">
+							<span>
+								<h3>Khalessi</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</span>
+						</div>
+						<div class='feedbackText'>
+							<img src="images/feedback1.png" alt="">
+							<span>
+								<h3>John Doe</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</span>
+						</div>
+						<div class='feedbackText'>
+							<img src="images/feedback2.png" alt="">
+							<span>
+								<h3>Khalessi</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							</span>
+						</div>
 					</div>
-					<div class='feedbackText'>
-						<img src="images/feedback2.png" alt="">
-						<span>
-							<h3>Khalessi</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-						</span>
-					</div>
-					<button class='keyboard'>
-						<img src="images/keyboard_arrow_down.png" alt="">
-					</button>
 				</div>
 			</div>
 		</div>
@@ -257,19 +270,41 @@
 	<div id="team">
 		<div class="container">
 			<div id="teamInside">
-				<div class='teamContent teamText'>
+				<div class='teamContent'>
 					<h1>Our Team</h1>
 					<p style='color: #b0bec5;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 				</div>
 				<div class='teamContent' id='teamContent'>
-					<span>
-						<img src="images/team1.png" alt="">
+					<span class='teamphoto' onclick="teamphoto()">
+						<img src="images/team1.1.png" alt="">
 					</span>
-					<span>
-						<img src="images/team2.png" alt="">
+					<span class='teamphoto teamphotoActive'  onclick="teamphoto()">
+						<img src="images/team2.1.png" alt="">
 					</span>
-					<span>
-						<img src="images/team3.png" alt="">
+					<span class='teamphoto'  onclick="teamphoto()">
+						<img src="images/team3.1.png" alt="">
+					</span>
+				</div>
+				<div class='teamContent teamText'>
+					<h3>Sophie Turner</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<span id='teamIcons'>
+						<img src="images/team_icon1.png" alt="">
+						<img src="images/team_icon2.png" alt="">
+						<img src="images/team_icon3.png" alt="">
+						<img src="images/team_icon4.png" alt="">
+						<img src="images/team_icon5.png" alt="">
+					</span>
+				</div>
+				<div class='teamContent teamtextActive teamText'>
+					<h3>Sophie Turner</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+					<span id='teamIcons'>
+						<img src="images/team_icon1.png" alt="">
+						<img src="images/team_icon2.png" alt="">
+						<img src="images/team_icon3.png" alt="">
+						<img src="images/team_icon4.png" alt="">
+						<img src="images/team_icon5.png" alt="">
 					</span>
 				</div>
 				<div class='teamContent teamText'>
@@ -330,7 +365,7 @@
 			</div>
 			<div class="footerInside">
 				<div id="footerPolicy">
-					<a href="">Privacy Policy</a>
+					<a href="https://www.termsfeed.com/live/6379297c-f613-4cfe-8e91-1686360d2081">Privacy Policy</a>
 				</div>
 				<div id="footerSocial">
 					<img src="images/team_icon1.png" alt="">
