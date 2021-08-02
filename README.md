@@ -7,4 +7,4 @@ This time i use JavaScript and jQuery. So you can check next features:
 2. Promo video with play and pause buttons
 3. Drop-down blocks
 4. Simple vertical slick slider
-5. Selector on "Team@ block"
+5. Selector on "Team block"
