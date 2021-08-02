@@ -161,7 +161,7 @@ nav .active {
 	letter-spacing: normal;
 	line-height: 30px;
 }
-#buttonSignUp {
+#signupClose {
 	width: 130px;
 	height: 50px;
 	margin: 10px 0;
@@ -182,7 +182,7 @@ nav .active {
 
 	transition: background-color 0.2s linear;
 }
-#buttonSignUp:hover {
+#signupClose:hover {
 	cursor: pointer;
 	background-color: #061e37;
 }

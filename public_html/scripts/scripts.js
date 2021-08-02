@@ -10,7 +10,8 @@ $(document).ready(function () {
 });
 
 //promoVideo
-function promoPlay() { 
+let promoPlay = document.getElementById('promoPlay');
+promoPlay.onclick = function() { 
 	    		$('#promoPlay').css({
 	        		'display' : 'none',
 	    		});
@@ -22,8 +23,9 @@ function promoPlay() {
 	        		'opacity' : '1',
 	    		});
 	    		$('#promo_video').trigger('play');
-} 
-function promoPause() { 
+}
+let promoPause = document.getElementById('promoPause'); 
+promoPause.onclick = function() { 
 			    $('#promoPlay').css({
 	        		'display' : 'inline',
 			    });
@@ -35,14 +37,15 @@ function promoPause() {
 }
 
 //signupForm
-function signupOpen() {
+let signupOpen = document.getElementById('signupOpen');
+signupOpen.onclick = function() {
   $('#signupForm').css({
     'display' : 'block',
   })
   // document.getElementById("signupForm").style.display = "block";
 }
-
-function signupClose() {
+let signupClose = document.getElementById('signupClose');
+signupClose.onclick = function() {
   $('#signupForm').css({
     'display' : 'none',
   })
@@ -103,4 +106,34 @@ $(function(){
   });
 });
 
-//teamphotoSlider
+//teamphotoSelecting
+let button1 = document.getElementById('buttonTeam1');
+let button2 = document.getElementById('buttonTeam2');
+let button3 = document.getElementById('buttonTeam3');
+button1.onclick = function() {
+  if(button1.className !== 'teamphotoActive') {
+    $('.teamContent').find('.teamphotoActive').removeClass('teamphotoActive');
+    button1.classList.add('teamphotoActive');
+
+    $('#teamInside').find('.teamtextActive').removeClass('teamtextActive');
+    document.getElementById('team1').classList.add('teamtextActive');
+  }
+}
+button2.onclick = function() {
+  if(button2.className !== 'teamphotoActive') {
+    $('.teamContent').find('.teamphotoActive').removeClass('teamphotoActive');
+    button2.classList.add('teamphotoActive');
+
+    $('#teamInside').find('.teamtextActive').removeClass('teamtextActive');
+    document.getElementById('team2').classList.add('teamtextActive');
+  }
+}
+button3.onclick = function() {
+  if(button3.className !== 'teamphotoActive') {
+    $('.teamContent').find('.teamphotoActive').removeClass('teamphotoActive');
+    button3.classList.add('teamphotoActive');
+
+    $('#teamInside').find('.teamtextActive').removeClass('teamtextActive');
+    document.getElementById('team3').classList.add('teamtextActive');
+  }
+}
